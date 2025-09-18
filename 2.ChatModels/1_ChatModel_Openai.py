@@ -10,7 +10,7 @@ load_dotenv()
 # Balanced response (general QA, explanation) - 0.5 - 0.7
 # Creative writing or Story telling - 0.9 - 1.2
 # Maximum randomness (wild ideas, brainstorming) - 1.5+
-model = ChatOpenAI(model="gpt-4o-mini", temperature=0.5, max_completion_tokens=10)
+model = ChatOpenAI(model="gpt-4o-mini", temperature=0.5, max_completion_tokens=50)
 result = model.invoke("Write a poem")
 
 # it will return different result {key:values} i.e tockens , etc than the llm
